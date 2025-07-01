@@ -94,43 +94,35 @@ export default function EngineerTrainingLP() {
   )
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
-      {/* ヘッダー（ファーストビュー） */}
-      <section className="h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black"></div>
-        {/* decorative background pattern */}
-        <div
-          className={
-            "absolute inset-0 " +
-            // Tailwind arbitrary value wrapped in a JS string so JSX doesn’t parse the `<` / `>` glyphs
-            "bg-[url(\"data:image/svg+xml,%3Csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20fill='none'%20fillRule='evenodd'%3E%3Cg%20fill='%23fbbf24'%20fillOpacity='0.05'%3E%3Ccircle%20cx='30'%20cy='30'%20r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")] " +
-            "opacity-20"
-          }
-        />
+<div className="min-h-screen bg-gray-900 text-white">
+  {/* ヘッダー（ファーストビュー） */}
+  <section className="h-screen flex items-center justify-center relative overflow-hidden">
+    <div className="hero-background"></div>
+    <div className="hero-pattern"></div>
 
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <div className="mb-8">
-            <Badge className="bg-yellow-400/20 text-yellow-400 border-yellow-400/30 mb-4">
-              <Zap className="w-4 h-4 mr-2" />
-              AI時代対応プログラム
-            </Badge>
-          </div>
+    <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+      <div className="mb-8">
+        <Badge className="bg-yellow-400/20 text-yellow-400 border-yellow-400/30 mb-4">
+          <Zap className="w-4 h-4 mr-2" />
+          AI時代対応プログラム
+        </Badge>
+      </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-yellow-400 bg-clip-text text-transparent leading-tight">
-            AI時代に活躍できる エンジニア育成プログラム\
-          </h1>
+      <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-yellow-200 to-yellow-400 bg-clip-text text-transparent leading-tight">
+        AI時代に活躍できる エンジニア育成プログラム
+      </h1>
 
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 font-light">現役エンジニアによるマンツーマンサポート</p>
+      <p className="text-xl md:text-2xl mb-8 text-gray-300 font-light">現役エンジニアによるマンツーマンサポート</p>
 
-          <div className="flex flex-col items-center gap-4">
-            <CTAButton />
-            <p className="text-sm text-gray-400">
-              <Shield className="w-4 h-4 inline mr-1" />
-              完全無料相談・成果報酬型
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="flex flex-col items-center gap-4">
+        <CTAButton />
+        <p className="text-sm text-gray-400">
+          <Shield className="w-4 h-4 inline mr-1" />
+          完全無料相談・成果報酬型
+        </p>
+      </div>
+    </div>
+  </section>
 
       {/* サービス紹介セクション */}
       <section className="py-20 px-4">
